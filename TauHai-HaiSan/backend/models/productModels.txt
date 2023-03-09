@@ -1,0 +1,15 @@
+Code productModels chỉ là khai báo để tạo ra sản phẩm ý.
+
+Đoạn code trên định nghĩa một schema (mô hình) cho đối tượng sản phẩm (Product) 
+trong MongoDB bằng cách sử dụng module mongoose của Node.js. Schema này định nghĩa các thuộc tính của 
+sản phẩm và các ràng buộc (constraints) trên chúng.
+
+
+
+Cách sử dụng module mogoose.
+        Module mongoose là một thư viện trong Node.js được sử dụng để kết nối và tương tác với MongoDB, 
+    cơ sở dữ liệu phi cấu trúc (NoSQL) phổ biến hiện nay. Mongoose cung cấp một API đơn giản và dễ sử dụng để 
+    thực hiện các thao tác truy vấn và cập nhật dữ liệu trong MongoDB.
+
+    
+

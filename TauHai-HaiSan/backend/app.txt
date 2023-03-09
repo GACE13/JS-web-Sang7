@@ -1,0 +1,17 @@
+/*
+    Giải thích đoạn code ở trên
+    Đầu tiên, ta khai báo biến express và gán cho nó giá trị của module express.
+
+    Sau đó, ta tạo một ứng dụng Express mới bằng cách gọi hàm express().
+
+
+    Tiếp theo, ta sử dụng phương thức use() của đối tượng app để đăng ký một middleware mà sẽ được sử dụng để xử lý các yêu cầu gửi 
+đến từ phía khách hàng. Middleware được đăng ký ở đây là express.json(), nó được sử dụng để phân tích các yêu cầu dạng JSON được gửi đến từ phía khách hàng.
+
+    Ta khai báo một biến product và gán cho nó giá trị của module produtRoute mà chúng ta khai báo ở đường dẫn "./routes/produtRoute".
+
+    Cuối cùng, ta sử dụng phương thức use() để đăng ký router product ở đường dẫn "/api/v1". 
+    Điều này có nghĩa là tất cả các yêu cầu đến địa chỉ "/api/v1" sẽ được xử lý bởi router product chúng ta đã đăng ký ở bước trước đó.
+
+    Cuối cùng, chúng ta xuất đối tượng ứng dụng app để có thể sử dụng ở các file khác trong ứng dụng của chúng ta.
+*/ 
