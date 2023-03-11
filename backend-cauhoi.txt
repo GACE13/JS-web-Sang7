@@ -1,0 +1,5 @@
+		+ Thư mục config chứa các file cấu hình cho ứng dụng của bạn, bao gồm các thiết lập cho cơ sở dữ liệu, các biến môi trường, khóa bí mật và các cài đặt khác. Các file này có thể được tải vào ứng dụng của bạn bằng cách sử dụng các thư viện như dotenv hoặc config.
+
+		+ Thư mục route chứa các file định tuyến cho ứng dụng của bạn. File định tuyến định nghĩa các endpoint API và xử lý các yêu cầu HTTP từ phía client. Bằng cách sử dụng các thư viện định tuyến như Express, bạn có thể dễ dàng định nghĩa các endpoint API và xử lý các yêu cầu đó bằng các hàm middleware.
+
+Việc sử dụng các thư mục này giúp bạn tổ chức và quản lý mã nguồn ứng dụng của bạn một cách rõ ràng và dễ dàng hơn, đồng thời giúp bạn tách biệt logic xử lý ứng dụng của bạn thành các phần riêng biệt để dễ dàng bảo trì và phát triển hơn trong tương lai.

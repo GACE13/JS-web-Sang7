@@ -1,0 +1,3 @@
+process.env.PORT là một biến môi trường trong Node.js, được sử dụng để đọc cổng được cấu hình trên môi trường thực thi của ứng dụng.
+
+Ví dụ, nếu bạn chạy ứng dụng Node.js trên máy tính của mình và cấu hình cổng cho ứng dụng của bạn là 3000, thì bạn có thể đặt biến môi trường PORT thành 3000 trên máy tính của bạn. Khi ứng dụng được khởi động, nó sẽ đọc giá trị của biến môi trường PORT và sử dụng cổng 3000 để lắng nghe các yêu cầu từ máy khác trên mạng.

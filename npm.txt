@@ -1,0 +1,11 @@
+npm cache clean --force: được sử dụng để xóa toàn bộ bộ nhớ cache của npm và làm mới lại cache từ đầu
+	+ Cache là một bộ nhớ tạm thời lưu trữ các tập tin đã được tải xuống từ các nguồn như registry npm, giúp giảm thời gian tải và tăng tốc độ cài đặt các gói npm.
+	* Đôi khi cache có thể gây ra các vấn đề như lỗi tải gói hoặc phiên bản cũ không được cập nhật. Lúc đó, lệnh "npm cache clean --force" sẽ xóa toàn bộ cache và đảm bảo rằng các gói mới nhất được tải xuống khi bạn cài đặt chúng.
+
+	Câu lệnh "npm i express mongoose dotenv" được sử dụng để tải xuống và cài đặt các gói phụ thuộc của Node.js để sử dụng trong ứng dụng của bạn. Cụ thể:
+
+		+ express: là một framework web cho Node.js, giúp bạn xây dựng ứng dụng web dễ dàng hơn bằng cách cung cấp các tính năng tiện ích như xử lý định tuyến, phản hồi HTTP và middleware.
+		+ mongoose: là một thư viện để làm việc với cơ sở dữ liệu MongoDB trong Node.js, giúp bạn tương tác với cơ sở dữ liệu MongoDB một cách dễ dàng hơn bằng cách cung cấp các tính năng ORM (Object-Relational Mapping).
+		+ dotenv: là một module giúp bạn quản lý các biến môi trường (environment variables) trong ứng dụng Node.js của bạn, giúp bạn không cần phải truy cập trực tiếp vào các biến môi trường trong hệ thống của bạn mà thay vào đó có thể quản lý chúng trong một file .env riêng.
+
+

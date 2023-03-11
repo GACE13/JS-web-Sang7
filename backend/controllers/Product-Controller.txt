@@ -1,0 +1,29 @@
+4-14    
+
+    Hàm này nhận vào hai tham số là req và res, tương ứng với yêu cầu và phản hồi HTTP từ client. 
+Hàm sử dụng phương thức create() của model Product để tạo mới một sản phẩm trong cơ sở dữ liệu, 
+với dữ liệu của sản phẩm được lấy từ body của yêu cầu. Sau khi tạo mới sản phẩm thành công, hàm trả về 
+một phản hồi HTTP với mã trạng thái 201 (Created) và một đối tượng JSON chứa thông tin sản phẩm vừa tạo, 
+kèm theo một thuộc tính success có giá trị là true để thể hiện rằng yêu cầu đã được xử lý thành công.
+
+
+async được sử dụng trong đoạn mã để định nghĩa hàm là một hàm bất đồng bộ (asynchronous function). 
+
+	Trong đoạn mã này, hàm createProduct sử dụng phương thức create của model Product để tạo một sản phẩm mới trong cơ sở dữ liệu. Phương thức này trả về một lời hứa (promise) và nó là một hàm bất đồng bộ, có nghĩa là nó không chờ đợi cho đến khi hoàn tất quá trình tạo sản phẩm mới trước khi trả về kết quả. Thay vào đó, nó tiếp tục thực hiện các lệnh khác trong hàm, trong khi quá trình tạo sản phẩm mới vẫn đang được thực hiện.
+
+	Bằng cách sử dụng từ khóa await để đợi kết quả của phương thức create, chúng ta đảm bảo rằng khi hàm createProduct trả về kết quả, sản phẩm mới đã được tạo và có sẵn để sử dụng. Nếu không sử dụng từ khóa await và hàm không được đánh dấu là bất đồng bộ, sản phẩm mới có thể chưa được tạo khi hàm trả về kết quả, dẫn đến lỗi trong quá trình xử lý yêu cầu của client.
+
+	Trong Node.js, khi một client gửi yêu cầu đến server, server sẽ tạo ra một đối tượng request (thường được viết tắt là req) và một đối tượng response (thường được viết tắt là res) để xử lý yêu cầu và gửi lại phản hồi cho client.
+
+		req là đối tượng request và chứa thông tin về yêu cầu của client, bao gồm các thông tin như phương thức HTTP được sử dụng (GET, POST, PUT, DELETE...), địa chỉ URL của yêu cầu, thông tin về header của yêu cầu, thông tin về body của yêu cầu (nếu có).
+
+		res là đối tượng response và chứa phản hồi của server cho client, bao gồm các thông tin như status code (mã trạng thái HTTP) để chỉ định kết quả của yêu cầu (200 OK, 404 Not Found, 500 Internal Server Error...), thông tin về header của phản hồi, nội dung của phản hồi (thường được gửi dưới dạng JSON, HTML, XML...).
+
+Trong đoạn mã của bạn, req và res được sử dụng trong hàm xử lý yêu cầu để lấy thông tin về yêu cầu của client (ví dụ như req.body để lấy thông tin về body của yêu cầu) và gửi phản hồi lại cho client thông qua hàm res.json.
+
+
+await: đợi chờ là hạnh phúc
+
+	Trong JavaScript, khi bạn gọi một hàm trả về một Promise, bạn có thể sử dụng await để đợi cho Promise đó được giải quyết hoặc bị từ chối trước khi thực hiện các câu lệnh tiếp theo.
+
+	Khi không sử dụng await, việc thực hiện các câu lệnh tiếp theo sẽ xảy ra ngay lập tức mà không chờ đợi Promise được giải quyết, dẫn đến các lỗi hoặc kết quả không mong muốn. Vì vậy, việc sử dụng await giúp đảm bảo rằng các câu lệnh được thực hiện với kết quả chính xác.
